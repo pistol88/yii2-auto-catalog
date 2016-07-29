@@ -14,7 +14,7 @@ use pistol88\gallery\widgets\Gallery;
 
     <?= $form->field($model, 'text')->textArea() ?>
 	
-    <?=Gallery::widget(['model' => $model, 'form' => $form, 'inAttribute' => 'image']); ?>
+    <?=Gallery::widget(['model' => $model]); ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Изменить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

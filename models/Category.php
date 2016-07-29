@@ -12,8 +12,6 @@ class Category extends \yii\db\ActiveRecord
         return [
             'images' => [
                 'class' => 'pistol88\gallery\behaviors\AttachImages',
-                'inAttribute' => 'image',
-                'mode' => 'single',
             ],
             'field' => [
                 'class' => 'pistol88\field\behaviors\AttachFields',

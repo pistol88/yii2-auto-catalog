@@ -15,10 +15,9 @@ class Model extends \yii\db\ActiveRecord
         return [
             'images' => [
                 'class' => 'pistol88\gallery\behaviors\AttachImages',
-                'inAttribute' => 'images',
             ],
             'toCategory' => [
-                'class' => 'voskobovich\behaviors\ManyToManyBehavior',
+                'class' => 'voskobovich\manytomany\ManyToManyBehavior',
                 'relations' => [
                     'category_ids' => 'categories',
                 ],
